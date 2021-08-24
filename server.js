@@ -23,7 +23,7 @@ app.use('/img', express.static(path.resolve(__dirname, '/assets/img')))
 app.use('/js', express.static(path.resolve(__dirname, '/assets/js')))
 
 app.get('/', (req, res) => {
-    res.send('Hello World')
+    res.render('index');
 })
 
 const PORT = process.env.PORT || 8080
