@@ -38,6 +38,8 @@ app.get('/update-user', (req, res) => {
     res.render('update_user')
 })
 
+// load routers 
+app.use('/', require('./server/routes/router'))
 app.listen(PORT, () => {
     console.log(`I am running on http://localhost:${PORT}`)
 }); 
